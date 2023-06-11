@@ -1,0 +1,97 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: thank
+  - action: utter_thank
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: generate random number
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: generate_random_number
+  - action: action_generate_random_number
+
+- story: personal information path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: request_personal_info
+  - action: utter_request_personal_info
+  - intent: affirm
+  - action: utter_ask_name
+  - intent: provide_name
+  - action: utter_ask_age
+  - intent: provide_age
+  - action: utter_ask_email
+  - intent: provide_email
+  - action: utter_ask_phone_number
+  - intent: provide_phone_number
+  - action: utter_submit
+  - intent: thank
+  - action: utter_thank
+
+- story: start admission process
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: start_admission
+  - action: utter_ask_name
+  - intent: provide_name
+  - slot_was_set:
+    - name: "{name}"
+  - action: utter_ask_age
+  - intent: provide_age
+  - slot_was_set:
+    - age: "{age}"
+  - action: utter_ask_email
+  - intent: provide_email
+  - slot_was_set:
+    - email: "{email}"
+  - action: utter_ask_phone_number
+  - intent: provide_phone_number
+  - slot_was_set:
+    - phone_number: "{phone_number}"
+  - action: utter_ask_course
+  - intent: provide_course
+  - slot_was_set:
+    - course: "{course}"
+  - action: utter_confirm_info
+  - intent: affirm
+  - action: utter_submit
+  - intent: deny
+    entities:
+    - name
+    - age
+    - email
+    - phone_number
+    - course
+  - action: utter_goodbye

@@ -1,0 +1,17 @@
+{
+  "john doe": "John Doe",
+  "alice": "Alice",
+  "sam": "Sam",
+  "25": "25",
+  "30": "30",
+  "18": "18",
+  "example@email.com": "example@email.com",
+  "info@example.com": "info@example.com",
+  "john.doe@example.com": "john.doe@example.com",
+  "123-456-7890": "123-456-7890",
+  "+1 (123) 456-7890": "+1 (123) 456-7890",
+  "9876543210": "9876543210",
+  "male": "Male",
+  "female": "Female",
+  "other": "Other"
+}

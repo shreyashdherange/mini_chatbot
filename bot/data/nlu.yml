@@ -1,0 +1,146 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: generate_random_number
+  examples: |
+    - enter a random number?
+    - generate a randam number?
+
+- intent: thank
+  examples: |
+    - Thanks
+    - Thank you
+    - Appreciate it
+
+- intent: provide_name
+  examples: |
+    - My name is [Shreyash Dherange](name)
+    - I'm [Shreyash](name)
+    - Call me [Sam](name)
+
+- intent: provide_age
+  examples: |
+    - I am [25](age) years old
+    - My age is [30](age)
+    - [18](age)
+
+- intent: provide_email
+  examples: |
+    - My email is [example@email.com](email)
+    - Email: [info@example.com](email)
+    - [shreyash@example.com](email)
+
+- intent: provide_phone_number
+  examples: |
+    - My phone number is [1234567890](phone_number)
+    - [123654](phone_number)
+    - Phone: [9876543210](phone_number)
+
+- intent: provide_gender
+  examples: |
+    - [Male](gender)
+    - [Female](gender)
+    - [Other](gender)
+
+- intent: request_personal_info
+  examples: |
+    - Enroll me
+    - add me
+    - add me
+
+- intent: start_admission
+  examples: |
+    - I want to apply for admission
+    - How can I start the admission process?
+    - What are the steps for admission?
+    - Can you help me with the admission?
+    - I'm interested in enrolling for a course
