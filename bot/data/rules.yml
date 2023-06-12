@@ -16,4 +16,10 @@ rules:
   steps:
   - intent: generate_random_number
   - action: action_generate_random_number
+
+- rule: Say 'thank you' anytime the user challenges
+  steps:
+  - intent: thank
+  - action: utter_thank
+  
   

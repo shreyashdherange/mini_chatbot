@@ -95,3 +95,8 @@ stories:
     - phone_number
     - course
   - action: utter_goodbye
+
+- story: end
+  steps:
+  - intent: thank
+  - action: utter_thank

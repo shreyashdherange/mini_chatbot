@@ -64,7 +64,7 @@ responses:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Great, How can I hep you?!"
 
   utter_goodbye:
   - text: "Goodbye! Have a great day!"
